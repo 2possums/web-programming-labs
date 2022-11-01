@@ -32,17 +32,27 @@
                 display: inline;
                 width: 200px;
                 height: 50px;
-                float:left;
-                border-color: rgb(233, 17, 118);
-                border-style:double;
+                border-radius: 40px;
+                border-color: rgb(139, 10, 107);
+                border-style:dotted;
+                background-color: rgb(243, 217, 237);
             }
             .b {
                 display: inline;
                 width: 200px;
                 height: 50px;
-                float:right;
+                float:left;
                 border-color: rgb(139, 10, 107);
                 border-style:inset;
+                background-color: rgb(243, 217, 237);
+            }
+            .c {
+                float: right;
+                border-color: rgb(233, 17, 118);
+                border-style:double;
+                background-color: rgb(226, 234, 255);
+                width: 200px;
+                height: 50px;
             }
         </style>
     </head>
@@ -67,6 +77,19 @@
             <div class="c">block 6 </div>
 
             <div style="clear: both">end</div>
+
+            <h1>Relative</h1>
+            <div class="d">В тот год осенняя погода</div>
+            <div class="d">Стояла догло на дворе,</div>
+            <div class="d" style="top: -28px; left: 70px;">Зима ждала, ждала природа. </div>
+            <div class="d">Снег выпал только в январе</div>
+
+            <h1>Absolute</h1>
+            <div>На третье в ночь. Проснувшись рано,</div>
+            <div>В окно увидела Татьяна</div>
+            <div style="position: absolute; left: 200px; top: 100px;">Поутру побелевший двор,</div>
+            <div>Куртины, кровли и забор,</div>
+            
         </div>
 
         <div class="footer">
