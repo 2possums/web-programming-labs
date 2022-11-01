@@ -54,6 +54,23 @@
                 width: 200px;
                 height: 50px;
             }
+            .e{
+                border-color: rgb(233, 17, 118);
+                border-style:double;
+                background-color: rgb(226, 234, 255);
+                width: 300px;
+                height: 100px;
+                border-radius: 10px;
+                display: block;
+                position: relative;
+                text-align: center;
+                line-height: 100px;
+            }
+            .e:hover{
+                color: rgb(234, 233, 240);
+                background-color: rgb(46, 125, 139);
+                z-index: 3;
+            }
         </style>
     </head>
     <body>
@@ -76,6 +93,8 @@
             <div class="c">block 5 </div>
             <div class="c">block 6 </div>
 
+            
+
             <div style="clear: both">end</div>
 
             <h1>Relative</h1>
@@ -89,6 +108,23 @@
             <div>В окно увидела Татьяна</div>
             <div style="position: absolute; left: 200px; top: 100px;">Поутру побелевший двор,</div>
             <div>Куртины, кровли и забор,</div>
+
+            <h1>Fixed</h1>
+            <div style="position: fixed; bottom: 300px; right: 300px;">
+                На стеклах легкие узоры,<br>
+                Деревья в зимнем серебре,<br>
+                Сорок веселых на дворе<br>
+                И мягко устланные горы<br>
+                Зимы блестательным ковром.<br>
+                Все ярко, все бело кругом.
+            </div>
+
+            <h1>Ladder</h1>
+            <div class="e" style="left: 30px; top: 0px">Блок А</div>
+            <div class="e" style="left: 50px; top: -20px;">Блок Б</div>
+            <div class="e" style="left: 70px; top: -40px;">Блок В</div>
+            <div class="e" style="left: 90px; top: -60px;">Блок Г</div>
+            <div class="e" style="left: 110px; top: -80px;">Блок Д</div>
             
         </div>
 
