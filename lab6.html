@@ -15,9 +15,11 @@
         <script src="lab6.js"></script>
     </head>
     <body>
-        <div class="header">
-            <div id="student">Амосова Виктория, Хан Александра</div>
-            <div call="language">
+        <div class="header" id="header">
+            <div id="student" onclick="showAlert2()">
+            Амосова Виктория, Хан Александра
+            </div>
+            <div class="language">
                 <input type="button" value="ru" onclick="setRussian()">
                 <input type="button" value="en" onclick="setEnglish()">
             </div>
@@ -25,25 +27,25 @@
 
         <div class="content">
             <from>
-                <div>
+                <div id="user-data">
                     <div>
-                        <span id="your-name">Виктория, Александра</span>: <input type="text" id="input-name" placeholder="введите имя">
+                        <span id="your-name">Ваше имя</span>: <input type="text" id="input-name" placeholder="введите имя">
                     </div>
                     <div>
-                        <span id="your-surname">Амосова, Хан</span>: <input type="text" id="input-surname" placeholder="введите фамилию">
+                        <span id="your-surname">Ваша фамилия</span>: <input type="text" id="input-surname" placeholder="введите фамилию">
                     </div>
                     <div>
-                        <span id="your-age">20</span>: <input type="number" id="input-age" placeholder="введите возраст">
+                        <span id="your-age">Ваш возраст</span>: <input type="number" id="input-age" placeholder="введите возраст">
                     </div>
                     <div>
-                        <input type="button" value="ок" id="ok-button">
+                        <input type="button" value="ок" id="ok-button" onclick="showAlert()">
                         <input type="reset" value="сброс" id="reset-button">
                     </div>
                 </div>
             </from>
         </div>
 
-        <div class="footer" id="footer">
+        <div class="footer" id="footer" onclick="showAlert3()">
             Факультет бизнеса, ФБИ-03, 3 курс, 2022
         </div>
     </body>
