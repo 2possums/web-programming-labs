@@ -65,3 +65,20 @@ function showAlert3() {
     let color = 'rgb(' + r + ',' + g + ',' + b + ')';
     document.getElementById('footer').style.backgroundColor = color;
 }
+
+function openAutor(btn, id) {
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(id).style.display = "block";
+    btn.className += " active";
+}
