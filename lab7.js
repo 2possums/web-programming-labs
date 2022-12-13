@@ -1,3 +1,8 @@
+function ALL () {
+    makeStrairs();
+    makeStrairs1();
+}
+
 function showAlert() {
     let userName = document.getElementById('input-name').value;
     let userSurname = document.getElementById('input-surname').value;
@@ -39,7 +44,7 @@ function makeStrairs() {
     for (let i = 0; i<stepCount; i++) {
         stairs.innerHTML += '<div class = "step"></div>';
     }
-    
+
     let steps = document.querySelectorAll ('.step');
     for (let i = 0; i<steps.length; i++) {
         steps[i].style.left = (30+10*i) + 'px';
@@ -47,3 +52,22 @@ function makeStrairs() {
         steps[i].innerHTML = 'Блок номер ' + i;
     }
 }
+
+function makeStrairs1() {
+    let stairs = document.querySelectorAll('#snowflackes');
+    let stepCount = 100;
+    for (let i = 0; i<stepCount; i++) {
+        snowflackes.innerHTML += '<img class = "snow" src= "https://cdn.leroymerlin.ru/lmru/image/upload/v1571726062/lmcode/1ALEQwcMqUeHP4C9bcZlTg/82279189.png"></img>';
+    }
+
+    let snow = document.querySelectorAll ('.snow');
+    let screenWidth = window.screen.width;
+    let screenHeight = window.screen.height;
+    for (let i = 0; i<snow.length; i++) {
+        steps[i].style.left = Math.random() * (screenWidth) + 'px';
+        steps[i].style.top = Math.random() * (screenWidth) + 'px';
+        steps[i].innerHTML = Math.random() * 100 + 'px';
+    }
+}
+
+
