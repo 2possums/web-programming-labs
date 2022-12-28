@@ -1,21 +1,23 @@
-body {
+body{
+    font-family: Arial,Helvetica, sans-serif;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fffff0;
+    background-color: #f1f1f1;
 }
-.header{
+.header {
     color: white;
-    background: black;
+    background: rgb(201, 150, 150);
     font-size: 20px;
     height: 80px;
     line-height: 80px;
     padding-left: 30px;
 }
+.content{
+}
 .footer{
-    color: #888;
+    color: rgb(3, 3, 3);
     font-size: 14px;
     font-style: italic;
-    background-color: #333;
+    background-color: rgb(194, 153, 194);
     text-align: right;
     height: 30px;
     line-height: 30px;
@@ -25,56 +27,16 @@ body {
     left: 0;
     right: 0;
 }
-.header .language {
-    position: absolute;
-    right: 30px;
-    top: 0px;
-}
-.tab {
-    overflow: hidden;
-    border: 1px solid #4CAF50;
-    background-color: #C8E6C9;
-}
-
-
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-}
-
-
-.tab button:hover {
-    background-color: #FFEB3B;
-}
-
-
-.tab button.active {
-    background-color: hwb(122 30% 31%);
-  color: #fff;
-}
-
-
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #4CAF50;
-    border-top: none;
-}
-
-.step {
-    width: 200px;
+.step{
+    width: 100px;
     height: 100px;
     border: 1px solid;
     position: absolute;
     top: 300px;
     left: 30px;
+    margin:auto;
+    background-color:rgb(187, 127, 255);
 }
-
-.snow {
+.snow{
     position: absolute;
 }
