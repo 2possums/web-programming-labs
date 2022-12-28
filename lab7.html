@@ -1,50 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-    <meta cherset = "utf-8">
-    <title>Амосова Виктория, Хан Александра. ФБИ-03. Лабораторная работа 7</title>
-    <link rel="stylesheet" href="lab7.css" type="text/css">
-    <script src="lab7.js"></script>
+        <meta charset="utf-8">
+        <title>Амосова Виктория, Хан Александра. ФБИ-03. Лабораторная работа 7</title>
+        <link rel="stylesheet" href="lab7.css" type="text/css">
+        <script src="lab7.js"></script>
     </head>
-    <body onload="makeStrairs()">
+    <body onload="load()"  >
         <div class="header">
-            Амосова Виктория, Хан Александра 
+            Амосова Виктория, Хан Александра
         </div>
-
-        <div class = "content">
-
-<div class="snow">
-  
-</div>
-    
-            <from>
-                <div id="user-data">
+        
+        <div class="content">
+            <form>
+                <div>
                     <div>
-                        <span id="your-name">Ваше имя</span>: <input type="text" id="input-name" placeholder="введите имя">
+                        <span id="your-name">Ваше имя</span>
+                        <input type="text" id="input-name" placeholder="Введите имя">
                     </div>
                     <div>
-                        <span id="your-surname">Ваша фамилия</span>: <input type="text" id="input-surname" placeholder="введите фамилию">
+                        <span id="your-surname"></span>
+                        <input type="text" id="input-surname" placeholder="Введите фамилию">
                     </div>
                     <div>
-                        <span id="your-age">Ваш возраст</span>: <input type="number" id="input-age" placeholder="введите возраст">
+                        <span id="your-age"></span>
+                        <input type="text" id="input-age" placeholder="Введите возраст">
                     </div>
                     <div>
-                        <span>Ваш пол</span>:
-                        <select id = "sex">
-                            <option value = "male">мужской</option>
-                            <option value = "female">женский</option>
+                        <span>Ваш пол</span>
+                        <select id="sex">
+                            <option value="male">Мужской</option>
+                            <option value="female">Женский</option>
                         </select>
                     </div>
                     <div>
-                        <input type="button" value="ок" id="ok-button" onclick="showAlert()">
-                        <input type="reset" value="сброс" id="reset-button">
+                        <input type="button" value="ОК" id="ok-button" onclick="showAlert()">
+                        <input type="reset" value="Сброс" id="reset-buttonme" >
+                    </div>
+                    
+                </div>
+            </form>
+            <div id="stairs"></div>
+
+           <div id="snezki"></div>
+
+            <div>
+                <div id="stishok">
+                    <div class="block">
+                        <div class="string">Эмалированное судно</div> 
+                        <div class="string">Окошко, тумбочка, кровать</div>
+                        <div class="string">Жить тяжело и неуютно</div>
+                        <div class="string">Зато уютно умирать</div>
+                    </div> 
+                    <div class="block">   
+                        <div class="string">И тихо капает из крана</div>
+                        <div class="string">И жизнь растрёпана, как б****ь</div>
+                        <div class="string">Выходит как бы из тумана</div>
+                        <div class="string">И видит: тумбочка, кровать</div>
+                    </div>
+                    <div class="block">   
+                        <div class="string">И я пытаюсь приподняться</div>
+                        <div class="string">Хочу в глаза ей поглядеть</div>
+                        <div class="string">Взглянуть в глаза и разрыдаться</div>
+                        <div class="string">И никогда не умереть, никогда не умереть</div>
+                    </div>
+                    <div class="block">   
+                        <div class="string">Никогда не умереть</div>
+                        <div class="string">Никогда не умереть</div>
+                        <div class="string">Никогда не умереть</div>
+                        <div class="string">Никогда не умереть</div>
+                    </div>
+                    <div class="block">
+                        <div class="string">Эмалированное судно</div>
+                        <div class="string">Окошко, тумбочка, кровать</div>
+                        <div class="string">Жить тяжело и неуютно</div>
+                        <div class="string">Зато уютно умирать</div>
+                    </div>
+                    <div class="block">
+                        <div class="string">Эмалированное судно</div>
+                        <div class="string">Окошко, тумбочка, кровать</div>
+                        <div class="string">Жить тяжело и неуютно</div>
+                        <div class="string">Зато уютно умирать</div>
                     </div>
                 </div>
-            </from>
-         <div id = "stairs"></div>
-         <div id = "snowflackes"></div>
+            </div>
         </div>
-
+        <div id="table">Таблица умножения на 6</div>
+        <div id="table">Таблица умножения на 3</div>
+        
         <div class="footer">
             Факультет бизнеса, ФБИ-03, 3 курс, 2022
         </div>
