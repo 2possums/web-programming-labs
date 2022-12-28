@@ -9,15 +9,38 @@
     <body>
         <div class="header">
             Амосова Виктория, Хан Александра
-            <div id="time">0:00:00</div>
         </div>
-        </div>
-
         <div class="content">
+            <button onclick="clickMe(this)">Щелчок</button>
+            <button onclick="clickMe2(this)">Амосова</button>
+            <button onclick="clickMe3(this)">Хан</button>
+            <button onclick="clickMe4(this)">Нажми меня</button>
             <div>
-                <button onclick="clickMe(this)">Щелчок</button>
+                <div id="coords">mouse</div>
             </div>
-        <div> 
+            <div>
+                <input type="text" value="Один">
+                <input type="text" value="Два">
+                <input type="text" value="Три">
+            </div>
+            <div id="output"></div>
+            <div>
+                Корзина:
+                <div>Опоссумы <input type="number" value="0" min="0"></div>
+                
+                <br>
+                <div>Крыски <input type="number" value="0" min="0"></div>
+                
+                <br>
+                <div>Лисы <input type="number" value="0" min="0"></div>
+                
+                <br>
+                Ваш заказ
+                <div>Опоссумы :<span class="output"></span> ед</div>
+                <div>Крыски :<span class="output"></span> ед</div>
+                <div>Лисы :<span class="output"></span> ед</div>
+            </div>
+        </div>
         <div class="footer">
             Факультет бизнеса, ФБИ-03, 3 курс, 2022
         </div>
