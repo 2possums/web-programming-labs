@@ -1,14 +1,20 @@
-body {
+body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fffff0;
 }
-.header{
+.header {
     color: white;
     background: rgb(104, 0, 73);
     font-size: 20px;
     height: 80px;
     line-height: 80px;
+    padding-left: 30px;
+}
+.content{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: black;
     padding-left: 30px;
 }
 .footer{
@@ -25,10 +31,25 @@ body {
     left: 0;
     right: 0;
 }
-
-.content{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
-    color: black;
-    padding-left: 30px;
+.step{
+    width: 200px;
+    height: 100px;
+    border: 1px solid;
+    position: absolute;
+    top: 300px;
+    left: 30px;
+    margin:auto;
+    background-color:rgb(182, 127, 255);
+}
+#coords{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(207, 226, 122);
+    color:azure;
+    text-align: center;
+    line-height: 500px;
+}
+.focused{
+    color: rgb(86, 27, 104);
+    font-size: 25px;
 }
