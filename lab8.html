@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <title>Амосова Виктория, Хан Александра. ФБИ-03. Лабораторная работа 8</title>
         <link rel="stylesheet" href="lab8.css" type="text/css">
         <script src="lab8.js"></script>
     </head>
     <body>
         <div class="header">
-            Амосова Виктория, Хан Александра
-            <div id="time">0:00:00</div>
-        </div>
+            <div>Амосова Виктория. Хан Александра
+                <div id="time">0:00:00</div>
+            </div>
         </div>
 
-        <div class="content">
-            Сегодня:
-            <div id = "today"></div>
-        <div>
-             Моя дата рождения: <input type = "date">
-        </div>
-        <div>
-            <button onclick="showDaysCount ()">Рассчитать, сколько прошло дней</button>
-        </div>
-        <div id = "result"></div>
+        <div class="content"> 
+            <div>Сегодня: <span id="today"></span></div>
+            <div>
+                Моя дата рождения: <input type="date">
+            </div>
+            <div>
+                Введите количество дней: <input type="number">
+            </div>
+            <div>
+                <button onclick="showDaysCount()">Рассчитать, сколько прошло дней</button>
+                <button onclick="showNumber()">Круглая дата</button>
+                <button onclick="showNewDate()">Новый формат</button>
+            </div>
+            <div id="result"></div>
+            <div id="resultNumber"></div>
         </div>
 
         <div class="footer">
