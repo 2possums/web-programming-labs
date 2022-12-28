@@ -12,7 +12,7 @@ body {
     padding-left: 30px;
 }
 .footer{
-    color: #888;
+    color: rgb(236, 230, 230);
     font-size: 14px;
     font-style: italic;
     background-color: rgb(121, 4, 121);
@@ -41,6 +41,4 @@ body {
     padding-left: 30px;
     text-align: right;
 }
-
-
 
