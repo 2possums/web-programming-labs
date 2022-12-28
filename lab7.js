@@ -62,7 +62,7 @@ function Snow(){
     }
 }
 
-function tableT(){
+function table1(){
     let stairs=document.querySelector('#table');
     let stepCount=10;
     for (let i=1; i<stepCount; i++){
@@ -70,11 +70,11 @@ function tableT(){
     }
     let steps=document.querySelectorAll('.table');
     for(let i=1; i<steps.length; i++){
-        steps[i].innerHTML=i+'*6='+(i*6);
+        steps[i].innerHTML=i+'*3='+(i*3);
     }
 }
 
-function tableT2(){
+function table2(){
     let stairs=document.querySelector('#table2');
     let stepCount=10;
     for (let i=1; i<stepCount; i++){
@@ -82,7 +82,7 @@ function tableT2(){
     }
     let steps=document.querySelectorAll('.table');
     for(let i=1; i<steps.length; i++){
-        steps[i].innerHTML=i+'*3='+(i*3);
+        steps[i].innerHTML=i+'*6='+(i*6);
     }
 }
 
@@ -108,6 +108,7 @@ function stih(){
 function load (){
     makeStairs();
     Snow();
-    tableT();
+    table1();
+    table2();
     stih();
 }
